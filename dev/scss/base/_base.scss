@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: black;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Spartan", sans-serif;
+  background-color: var(--LightGrayishCyanBackground);
+  max-width: 375px;
+  min-height: 100vh;
+
+  @include desktop {
+    max-width: 1440px;
+  }
+}
+
+.main {
+  position: relative;
+  padding: 2em 1.5em 0;
+
+  @include desktop {
+    padding: 2em 11em 0;
+  }
+}
+
+.attribution {
+  padding: 0 5em 3em;
+  font-size: 11px;
+  text-align: center;
+  & a {
+    color: hsl(228, 45%, 44%);
+  }
+}

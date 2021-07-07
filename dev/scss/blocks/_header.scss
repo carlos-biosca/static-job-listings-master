@@ -1,0 +1,11 @@
+.header {
+  height: 155px;
+  background-image: url("../assets/images/bg-header-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: var(--DesaturatedDarkCyan);
+
+  @include desktop {
+    background-image: url("../assets/images/bg-header-desktop.svg");
+    background-size: cover;
+  }
+}

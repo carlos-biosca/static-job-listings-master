@@ -1,0 +1,50 @@
+.tag {
+  padding: 11px 7px 7px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  background-color: var(--LightGrayishCyanBackground);
+  color: var(--DesaturatedDarkCyan);
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 3px;
+
+  @include desktop {
+    &:hover {
+      cursor: pointer;
+      color: var(--LightGrayishCyanBackground);
+      background-color: var(--DesaturatedDarkCyan);
+    }
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &--filter {
+    margin-right: 0;
+    border-radius: 3px 0 0 3px;
+
+    @include desktop {
+      pointer-events: none;
+    }
+  }
+
+  &__remove {
+    background-image: url("../assets/images/icon-remove.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 15px;
+    width: 30px;
+    height: 35px;
+    background-color: var(--DesaturatedDarkCyan);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    @include desktop {
+      &:hover {
+        cursor: pointer;
+        background-color: var(--VeryDarkGrayishCyan);
+      }
+    }
+  }
+}

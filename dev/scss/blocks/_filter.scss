@@ -1,0 +1,46 @@
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: -64px;
+  width: 100%;
+  min-height: 0px;
+  padding: 1em 1em 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 5px 30px -10px rgba(rgb(91, 164, 164), 0.75);
+  opacity: 0;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+
+    &:last-of-type > div + span {
+      margin-right: 0;
+    }
+  }
+
+  &__clear {
+    color: var(--DarkGrayishCyan);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0 0.8em 0.8em;
+
+    @include desktop {
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: var(--DesaturatedDarkCyan);
+      }
+    }
+  }
+
+  &--show {
+    opacity: 1;
+  }
+}
